@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Style/Style.css" />
+    <link rel="icon" href="./Images/toDoList.png" />
+    <title></title>
+  </head>
+  <body>
+    <div class="global">
+      <div class="nav">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-header">
+          <img src="Images/toDoList.png" title="Réalisé en DOM" />
+          <div class="nav-title">
+            <h1 id="titre">
+              ToDoList
+            </h1>
+            <p><em> by [...CSO-DEV]</em></p>
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <img src="Images/burger.png" id="burger" />
+          </label>
+        </div>
+        <div class="nav-links">
+          <label for="nav-check" id="plage" class="theme">Plage (Nouméa)</label>
+          <label for="nav-check" id="plitvice" class="theme"
+            >Plitvice (Croatie)</label
+          >
+          <label for="nav-check" id="mimosa" class="theme"
+            >Mimosa (Vallauris)</label
+          >
+          <label for="nav-check" id="singapour" class="theme"
+            >Orchidée (Singapour)</label
+          >
+          <label for="nav-check" id="etretat" class="theme"
+            >Etretat (Normandie)</label
+          >
+          <label for="nav-check" id="guell" class="theme"
+            >Guell (Espagne)</label
+          >
+        </div>
+      </div>
+      <div class="global">
+        <div id="todolist">
+          <div class="saisieTotal">
+            <label for="text">Saisissez votre tâche :</label>
+            <div id="saisie">
+              <input type="text" id="champText" name="text" />
+              <input type="button" id="monBouton" value="Valider" />
+            </div>
+          </div>
+          <div class="listes">
+            <ul id="listeAFaire" class="liste">
+              Liste de tâches à Faire
+            </ul>
+            <ul id="listeEnCours" class="liste">
+              Liste de tâches en cours
+            </ul>
+            <ul id="listeOk" class="liste">
+              Liste de tâches terminées
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="Script/Script.js"></script>
+</html>
