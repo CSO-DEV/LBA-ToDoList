@@ -1,3 +1,8 @@
+/**
+ * Exercice Le Bocal Academy 2020 : HTML, CSS, JS et DOM
+ * Style.css - Gestion des tâches dans les diffrentes listes et des thèmes d'affichage / Management of tasks in different lists and display themes
+ */
+
 * {
   box-sizing: border-box;
 }
@@ -9,9 +14,9 @@ body {
   margin-left: 5%;
   margin-right: 5%;
 }
-/*
-*Barre de navigation
-*/
+
+/*Barre de navigation*/
+/*Navigation bar*/
 .nav {
   height: 60px;
   width: 100%;
@@ -102,14 +107,14 @@ body {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(60vh - 50px);
+    height: calc(85vh - 50px);
     overflow-y: auto;
   }
 }
 
-/*
-*Barre de navigation
-*/
+/*Listes d'affichage des tâches*/
+/*Task display lists*/
+
 .global {
   margin-top: 10px;
   background-color: ivory;
