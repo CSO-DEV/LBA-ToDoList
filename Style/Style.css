@@ -194,7 +194,7 @@ body {
 .saisieTotal {
   display: flex;
   flex-direction: column;
-  width: 98%;
+  width: 30vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -213,8 +213,11 @@ body {
 @media only screen and (max-width: 1335px) {
   .listes {
     flex-direction: column;
-    width: 98%;
+    width: 80vw;
     align-items: center;
+  }
+  .liste {
+    width: 98%;
   }
   .saisieTotal {
     width: 98%;
@@ -222,10 +225,7 @@ body {
   }
 }
 @media only screen and (max-width: 500px) {
-  .liste {
-    width: 98%;
-  }
   #saisie {
-    width: 98%;
+    max-width: 80%;
   }
 }
