@@ -93,30 +93,31 @@ addButton.addEventListener("click", function () {
   champSaisie.innerText = input.value;
   champSaisie.readOnly = true;
   imgSup.setAttribute("src", "./Images/poubelle.svg");
-  imgSup.setAttribute("height", "20");
-  imgSup.setAttribute("width", "20");
+  imgSup.setAttribute("height", "35");
+  imgSup.setAttribute("width", "35");
   imgSup.setAttribute("title", "Supprimer");
   imgSup.addEventListener("click", function (e) {
     liAFaire.remove();
   });
 
   imgModif.setAttribute("src", "./Images/modifier.svg");
-  imgModif.setAttribute("height", "20");
-  imgModif.setAttribute("width", "20");
+  imgModif.setAttribute("height", "35");
+  imgModif.setAttribute("width", "35");
   imgModif.setAttribute("title", "Modifier");
   imgModif.addEventListener("click", function () {
     let libelle = champSaisie.value;
     nouvText = prompt("Veuillez modifier la tâche :", libelle);
-    if (!nouvText) {
+    if (nouvText == "") {
       alert("Le champ de saisie est vide");
+      champSaisie.value = libelle;
       return;
     }
-    champSaisie.innerText = nouvText;
+    champSaisie.value = nouvText;
   });
 
   imgTransfert.setAttribute("src", "./Images/transfert.svg");
-  imgTransfert.setAttribute("height", "20");
-  imgTransfert.setAttribute("width", "20");
+  imgTransfert.setAttribute("height", "35");
+  imgTransfert.setAttribute("width", "35");
   imgTransfert.setAttribute("title", "Transférer dans la liste en cours");
   imgTransfert.addEventListener("click", function () {
     let liEnCours = liAFaire;
@@ -130,8 +131,8 @@ addButton.addEventListener("click", function () {
   });
 
   imgOk.setAttribute("src", "./Images/transfert.svg");
-  imgOk.setAttribute("height", "20");
-  imgOk.setAttribute("width", "20");
+  imgOk.setAttribute("height", "35");
+  imgOk.setAttribute("width", "35");
   imgOk.setAttribute("title", "Tâche terminée");
   imgOk.addEventListener("click", function () {
     let liOk = liAFaire;

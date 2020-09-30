@@ -61,6 +61,7 @@ body {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .nav > .nav-links > label:hover {
@@ -106,6 +107,7 @@ body {
     display: block;
     width: 100%;
     color: blanchedalmond;
+    font-size: 20px;
   }
   .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
