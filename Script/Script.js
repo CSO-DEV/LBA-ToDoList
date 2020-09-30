@@ -4,8 +4,8 @@
  */
 
 /*Affichage par défaut du document - Default document view*/
-document.body.style.backgroundImage = "url('./images/home.png')";
-document.body.style.backgroundImage = "url('./images/home.png')";
+document.body.style.backgroundImage = "url('./Images/home.png')";
+document.body.style.backgroundImage = "url('./Images/home.png')";
 
 /*Récupération de l'élément dans le document - Retrieving items from the document*/
 let addButton = document.querySelector("#monBouton");
@@ -22,42 +22,42 @@ document.querySelectorAll(".theme").forEach(function (item) {
   item.addEventListener("click", function (e) {
     let imgUrl, global, ulAFColor, ulECcolor, ulOkcolor;
     if (e.target.id === "plage") {
-      imgUrl = "url('./images/noumea.jpg')";
+      imgUrl = "url('./Images/noumea.jpg')";
       global = "rgb(59, 98, 142)";
       ulAFColor = "rgb(139, 139, 134)";
       ulECColor = "rgb(232, 217, 199)";
       ulOkColor = "rgb(158, 177, 170)";
     }
     if (e.target.id === "plitvice") {
-      imgUrl = "url('./images/lac.jpg')";
+      imgUrl = "url('./Images/lac.jpg')";
       global = "rgb(156, 198, 147)";
       ulAFColor = "rgb(138, 171, 133)";
       ulECColor = "rgb(160, 172, 184)";
       ulOkColor = "rgb(68, 103, 91)";
     }
     if (e.target.id === "mimosa") {
-      imgUrl = "url('./images/mimosa.jpg')";
+      imgUrl = "url('./Images/mimosa.jpg')";
       global = "rgb(125, 148, 170)";
       ulAFColor = "rgb(215, 189, 16)";
       ulECColor = "rgb(115, 102, 35)";
       ulOkColor = "rgb(168, 172, 44)";
     }
     if (e.target.id === "singapour") {
-      imgUrl = "url('./images/singapour.jpg')";
+      imgUrl = "url('./Images/singapour.jpg')";
       global = "	rgb(174, 166, 167)";
       ulAFColor = "	rgb(138, 53, 115)";
       ulECColor = "	rgb(96, 115, 84)";
       ulOkColor = "rgb(134, 163, 98)";
     }
     if (e.target.id === "etretat") {
-      imgUrl = "url('./images/etretat.jpg')";
+      imgUrl = "url('./Images/etretat.jpg')";
       global = "rgb(205, 212, 83)";
       ulAFColor = "rgb(170, 195, 56)";
       ulECColor = "rgb(154, 165, 55)";
       ulOkColor = "rgb(172, 177, 140)";
     }
     if (e.target.id === "guell") {
-      imgUrl = "url('./images/guell.jpg')";
+      imgUrl = "url('./Images/guell.jpg')";
       global = "rgb(184, 181, 177)";
       ulAFColor = "rgb(104, 108, 98)";
       ulECColor = "rgb(85, 66, 57)";
@@ -87,7 +87,7 @@ addButton.addEventListener("click", function () {
 
   //Attribut - Attribut
   champSaisie.innerText = input.value;
-  imgSup.setAttribute("src", "./images/poubelle.svg");
+  imgSup.setAttribute("src", "./Images/poubelle.svg");
   imgSup.setAttribute("height", "20");
   imgSup.setAttribute("width", "20");
   imgSup.setAttribute("title", "Supprimer");
@@ -95,7 +95,7 @@ addButton.addEventListener("click", function () {
     liAFaire.remove();
   });
 
-  imgModif.setAttribute("src", "./images/modifier.svg");
+  imgModif.setAttribute("src", "./Images/modifier.svg");
   imgModif.setAttribute("height", "20");
   imgModif.setAttribute("width", "20");
   imgModif.setAttribute("title", "Modifier");
@@ -105,7 +105,7 @@ addButton.addEventListener("click", function () {
     champSaisie.innerText = nouvText;
   });
 
-  imgTransfert.setAttribute("src", "./images/transfert.svg");
+  imgTransfert.setAttribute("src", "./Images/transfert.svg");
   imgTransfert.setAttribute("height", "20");
   imgTransfert.setAttribute("width", "20");
   imgTransfert.setAttribute("title", "Transférer dans la liste en cours");
@@ -120,7 +120,7 @@ addButton.addEventListener("click", function () {
     ulEC.appendChild(liEnCours);
   });
 
-  imgOk.setAttribute("src", "./images/transfert.svg");
+  imgOk.setAttribute("src", "./Images/transfert.svg");
   imgOk.setAttribute("height", "20");
   imgOk.setAttribute("width", "20");
   imgOk.setAttribute("title", "Tâche terminée");
