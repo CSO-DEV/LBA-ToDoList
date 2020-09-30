@@ -79,7 +79,7 @@ document.querySelectorAll(".theme").forEach(function (item) {
 addButton.addEventListener("click", function () {
   //Création des éléments -  Creation of the elements
   let liAFaire = document.createElement("li");
-  let champSaisie = document.createElement("text");
+  let champSaisie = document.createElement("textarea");
   let imgSup = document.createElement("img");
   let imgModif = document.createElement("img");
   let imgTransfert = document.createElement("img");
@@ -91,6 +91,7 @@ addButton.addEventListener("click", function () {
     return;
   }
   champSaisie.innerText = input.value;
+  champSaisie.readOnly = true;
   imgSup.setAttribute("src", "./Images/poubelle.svg");
   imgSup.setAttribute("height", "20");
   imgSup.setAttribute("width", "20");
@@ -104,7 +105,7 @@ addButton.addEventListener("click", function () {
   imgModif.setAttribute("width", "20");
   imgModif.setAttribute("title", "Modifier");
   imgModif.addEventListener("click", function () {
-    let libelle = champSaisie.innerText;
+    let libelle = champSaisie.value;
     nouvText = prompt("Veuillez modifier la tâche :", libelle);
     if (!nouvText) {
       alert("Le champ de saisie est vide");
