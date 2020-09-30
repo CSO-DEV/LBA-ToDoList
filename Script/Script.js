@@ -86,6 +86,10 @@ addButton.addEventListener("click", function () {
   let imgOk = document.createElement("img");
 
   //Attribut - Attribut
+  if (!input.value) {
+    alert("le champ de saisie est vide");
+    return;
+  }
   champSaisie.innerText = input.value;
   imgSup.setAttribute("src", "./Images/poubelle.svg");
   imgSup.setAttribute("height", "20");
@@ -102,6 +106,10 @@ addButton.addEventListener("click", function () {
   imgModif.addEventListener("click", function () {
     let libelle = champSaisie.innerText;
     nouvText = prompt("Veuillez modifier la tâche :", libelle);
+    if (!nouvText) {
+      alert("Le champ de saisie est vide");
+      return;
+    }
     champSaisie.innerText = nouvText;
   });
 
