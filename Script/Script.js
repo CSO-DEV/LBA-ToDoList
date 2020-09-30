@@ -43,7 +43,7 @@ document.querySelectorAll(".theme").forEach(function (item) {
       ulOkColor = "rgb(168, 172, 44)";
     }
     if (e.target.id === "singapour") {
-      imgUrl = "url('./Images/singapour.jpg')";
+      imgUrl = "url('./Images/singapour.JPG')";
       global = "	rgb(174, 166, 167)";
       ulAFColor = "	rgb(138, 53, 115)";
       ulECColor = "	rgb(96, 115, 84)";
